@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Conceito de interface AmpliSense Bio V2" />
+  <title>AmpliSense Bio — V2 Concept</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#hoje">Pular para o conteúdo</a>
+  <main class="shell">
+    <aside class="sidebar">
+      <a class="brand" href="#top"><span class="brand-mark">a</span><span>amplisense<br><b>bio</b></span></a>
+      <p class="eyebrow">SEU ESPAÇO</p>
+      <nav>
+        <a class="active" href="#hoje"><span>◉</span> Hoje</a>
+        <a href="#plano"><span>□</span> Meu plano</a>
+        <a href="#tendencias"><span>⌁</span> Tendências</a>
+        <a href="#insights"><span>✦</span> Insights</a>
+      </nav>
+      <div class="side-bottom">
+        <div class="profile"><span class="avatar">IP</span><span><b>Igor</b><small>Plano Standard</small></span><span>⌄</span></div>
+        <a href="#relatorio">↗ Relatório semanal</a>
+      </div>
+    </aside>
+
+    <section class="content" id="top">
+      <header class="topbar"><div><p class="eyebrow">SEGUNDA-FEIRA, 31 DE AGOSTO</p><h1>Bom dia, Igor.</h1></div><div class="actions"><button class="icon menu-toggle" data-action="menu" aria-label="Abrir navegação" aria-controls="mobile-menu" aria-expanded="false">☰</button><button class="icon desktop-only" aria-label="Pesquisar">⌕</button><button class="icon notice desktop-only" aria-label="Notificações">♧</button><button class="primary" data-action="connect">Conectar dispositivo <span>→</span></button></div></header>
+
+      <nav class="mobile-menu" id="mobile-menu" aria-label="Navegação principal" hidden>
+        <a class="active" href="#hoje">Hoje</a><a href="#plano">Meu plano</a><a href="#tendencias">Tendências</a><a href="#insights">Insights</a><a href="#relatorio">Relatório semanal</a>
+      </nav>
+
+      <section class="hero" id="hoje">
+        <div class="hero-copy"><span class="status"><i></i> Prontidão moderada</span><h2>Hoje é dia de <em>avanço consciente.</em></h2><p>Você tem energia para decisões relevantes. Proteja a manhã e deixe tarefas operacionais para depois das 14h.</p><div class="hero-actions"><a class="primary button-link" href="#plano">Ver meu plano <span>→</span></a><button class="quiet" data-action="explain" aria-haspopup="dialog">Por que essa recomendação?</button></div></div>
+        <div class="readiness"><div class="ring"><div><strong>72</strong><small>/100</small></div></div><p>PRONTIDÃO</p><span>↑ 8 pontos vs. média</span></div>
+      </section>
+
+      <section class="metrics"><article><div class="metric-title"><span>Recuperação</span><b class="good">Boa</b></div><strong>81<span>%</span></strong><div class="bar"><i style="width:81%"></i></div><small>Seu corpo respondeu bem ao descanso.</small></article><article><div class="metric-title"><span>Sono</span><b>6h 47m</b></div><strong>86<span>/100</span></strong><div class="bar purple"><i style="width:86%"></i></div><small>Regularidade melhor que a última semana.</small></article><article><div class="metric-title"><span>Carga recente</span><b class="warn">Atenção</b></div><strong>68<span>/100</span></strong><div class="bar amber"><i style="width:68%"></i></div><small>Mantenha a intensidade controlada hoje.</small></article></section>
+
+      <section class="grid">
+        <article class="plan card" id="plano"><div class="section-title"><div><p class="eyebrow">ORGANIZE O DIA</p><h3>Seu plano inteligente</h3></div><button class="link" data-action="plan">Editar plano</button></div><ol><li class="done"><time>08:30</time><span class="dot"></span><div><b>Revisão estratégica</b><small>90 min de foco profundo</small></div><span class="tag">Concluído</span></li><li><time>10:30</time><span class="dot"></span><div><b>Decisão de produto</b><small>Janela ideal de clareza</small></div><span class="tag highlight">Agora</span></li><li><time>14:30</time><span class="dot"></span><div><b>Reuniões e alinhamentos</b><small>Proteja a manhã para o que importa</small></div></li><li><time>20:30</time><span class="dot"></span><div><b>Desacelerar</b><small>Rotina de recuperação recomendada</small></div></li></ol></article>
+        <article class="insight card" id="insights"><div class="section-title"><div><p class="eyebrow">LEITURA DO MOMENTO</p><h3>Um insight para você</h3></div><button class="more">•••</button></div><div class="insight-mark">✦</div><h4>Seu foco está disponível.<br>Use-o em algo que muda o jogo.</h4><p>Nas últimas 3 semanas, suas melhores entregas vieram quando você protegeu o primeiro bloco do dia.</p><a href="#tendencias">Ver evidência <span>→</span></a></article>
+      </section>
+
+      <section class="trends card" id="tendencias"><div class="section-title"><div><p class="eyebrow">ÚLTIMOS 7 DIAS</p><h3>Energia e recuperação</h3></div><div class="legend"><span><i class="blue"></i>Energia</span><span><i class="green"></i>Recuperação</span></div></div><div class="chart"><div class="y"><span>100</span><span>75</span><span>50</span><span>25</span></div><svg viewBox="0 0 700 180" preserveAspectRatio="none" role="img" aria-labelledby="chart-title chart-desc"><title id="chart-title">Tendência semanal de energia e recuperação</title><desc id="chart-desc">A energia cresce ao longo da semana e atinge o maior ponto no domingo. A recuperação varia, mas permanece em faixa moderada a boa.</desc><defs><linearGradient id="fill" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#6797ff" stop-opacity=".28"/><stop offset="1" stop-color="#6797ff" stop-opacity="0"/></linearGradient></defs><path class="area" d="M0,110 C55,95 60,67 110,78 S176,127 225,99 S280,61 330,79 S395,110 440,92 S510,39 555,55 S635,89 700,25 L700,180 L0,180Z"/><path class="line blue-line" d="M0,110 C55,95 60,67 110,78 S176,127 225,99 S280,61 330,79 S395,110 440,92 S510,39 555,55 S635,89 700,25"/><path class="line green-line" d="M0,80 C48,49 73,87 110,64 S181,55 225,76 S294,33 330,56 S393,83 440,66 S499,87 555,77 S634,40 700,48"/></svg><div class="days"><span>SEG</span><span>TER</span><span>QUA</span><span>QUI</span><span>SEX</span><span>SÁB</span><span>DOM</span></div></div><p class="chart-summary">Resumo: energia em alta no fim da semana; recuperação estável. Dados demonstrativos, não clínicos.</p></section>
+      <section class="report-note card" id="relatorio"><p class="eyebrow">RELATÓRIO SEMANAL</p><h3>O relatório estará disponível após 7 dias de leituras elegíveis.</h3><p>Mostra tendências, evidências e ações concluídas — sem interpretações clínicas.</p></section>
+      <footer>AmpliSense Bio V2 · conceito de interface · dados demonstrativos</footer>
+    </section>
+  </main>
+  <dialog class="explain-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-header"><div><p class="eyebrow">RECOMENDAÇÃO EXPLICÁVEL</p><h2 id="dialog-title">Por que avançar com consciência?</h2></div><button class="icon" data-action="close" aria-label="Fechar explicação">×</button></div>
+    <p>Sua recuperação está boa e a tendência de energia subiu 8 pontos. A carga recente ainda pede moderação: priorize uma decisão importante antes do meio-dia e evite acumular tarefas intensas.</p>
+    <ul><li><strong>81%</strong> de recuperação após o descanso</li><li><strong>68/100</strong> de carga recente — dentro da faixa de atenção</li><li><strong>3 semanas</strong> de evidência de maior foco pela manhã</li></ul>
+    <button class="primary" data-action="close">Entendi <span>→</span></button>
+  </dialog>
+</body>
+</html>
